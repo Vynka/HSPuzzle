@@ -12,8 +12,9 @@ h1,h2 {
 	text-align: center;
 }
 
-#win {
+#win,#lose {
 	padding-top: 130px;
+	display: none;
 }
 
 /*

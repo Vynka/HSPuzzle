@@ -151,10 +151,17 @@ function generateBoard(){
 }
 
 function checkWin(){
+	console.log("in checkWin");
 	if (opo.hp == 0){
 		////console.log('YOU WIN');
 		setBoard();	
 		var win = document.getElementById('win');
 		win.style.display = 'block';
+	}
+	else if ((Player.hand.length == 0) && (opo.hp > 0)) {
+		console.log('YOU LOSE')
+		setBoard();
+		var lose = document.getElementById('lose');
+		lose.style.display = 'block';
 	}
 }
