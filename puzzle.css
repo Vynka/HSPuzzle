@@ -1,0 +1,367 @@
+html {
+	background-image: url("IMAGES/bckg.jpg");
+	background-color: black;
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center top;
+}
+
+
+h1,h2 {
+	color: white;
+	text-align: center;
+}
+
+#win {
+	padding-top: 130px;
+}
+
+/*
+GAME
+*/
+
+#board {
+	background-image: url("IMAGES/Board.png");
+	display: block;
+	width: 1152px;
+	height: 648px;
+	margin-top: 30px;
+}
+
+.hand {
+	##background-color: rgba(0,0,0,0.4);
+	width: 95%;
+	height: 250px;
+	position: relative;
+	top: -335px;
+}
+
+.submit {
+	width: 95px;
+	height: 50px;
+	#background-color: rgba(0,0,255,0.4);
+	position: relative;
+	top: -620;
+	left: 345;
+	 border-radius: 40px/10px;
+}
+
+.self.mana {
+	color: white;
+	text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: 'HealthFont';
+	font-size: 11pt;
+	text-align: center;
+	background-image: url("IMAGES/mana.png");
+	background-size: cover;
+	width: 48px;
+	height: 20px;
+	position: relative;
+	top: -286px;
+	left: 173px;
+}
+
+.enemy.mana {
+	color: white;
+	text-shadow:
+	-1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: 'HealthFont';
+	font-size: 10pt;
+	text-align: center;
+	background-image: url("IMAGES/mana.png");
+	background-size: cover;
+	width: 48px;
+	height: 20px;
+	position: relative;
+	top: -267px;
+	left: 150px;
+}
+
+.minionzone {
+	#background-color: rgba(0,255,0,0.4);
+	position: relative;
+	top: -120px;
+	left: -20px;
+	height: 0px;
+	width: 620px;
+	height: 110px;
+}
+
+.enemy.minionzone{
+	#background-color: rgba(255,0,0,0.4);
+	position: relative;
+	top: -130px;
+	left: -20px;
+	width: 620px;
+	height: 110px;
+}
+
+.enemy.hero.portrait {
+	display: block;
+	background-size: cover;
+	width: 93px;
+	height: 103px;
+	position: relative;
+	top: 70px;
+	left: -2px;
+}
+
+.hero.portrait {
+	display: block;
+	background-size: cover;
+	width: 93px;
+	height: 103px;
+	position: relative;
+	top: -105px;
+	left: -2px;
+}
+
+.self.hero.armor {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	padding-top: 1px;
+	padding-bottom: 4px;
+	font-family: 'HealthFont';
+	font-size: 18pt;
+	text-align: center;
+	position: relative;
+	left: 40px;
+	top: -245px;
+	background-image: url("IMAGES/armor.png");
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+
+.enemy.hero.armor {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	padding-top: 1px;
+	padding-bottom: 4px;
+	font-family: 'HealthFont';
+	font-size: 18pt;
+	text-align: center;
+	position: relative;
+	left: 40px;
+	top: -30px;
+	background-image: url("IMAGES/armor.png");
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+
+.heropower {
+	background-image: url("IMAGES/heropower.png");
+	background-size: cover;
+	width: 80px;
+	height: 85px;
+}
+
+.self.heropower{
+	position: relative;
+	left: 105px;
+	top: -315px;
+}
+
+.enemy.heropower{
+	position: relative;
+	left: 100px;
+	top: -125px;
+}
+
+.self.hero.attack {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	 padding-left: 6px;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	font-family: 'HealthFont';
+	font-size: 18pt;
+	text-align: center;
+	position: relative;	
+	top: -135px;
+	left: -45px;
+	background-image: url("IMAGES/attack.png");
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+
+.enemy.hero.attack {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	 padding-left: 6px;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	font-family: 'HealthFont';
+	font-size: 18pt;
+	text-align: center;
+	position: relative;	
+	top: -35px;
+	left: -45px;
+	background-image: url("IMAGES/attack.png");
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+
+.self.hero.health {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	padding-top: 10px;
+	padding-bottom: 4px;
+	font-family: 'HealthFont';
+	font-size: 18pt;
+	text-align: center;
+	position: relative;
+	top: -178px;
+	left: 40px;
+	background-image: url("IMAGES/Health.png");
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+
+.enemy.hero.health {
+  color: red;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	padding-top: 10px;
+	padding-bottom: 4px;
+	font-family: 'HealthFont';
+	font-size: 18pt;
+	text-align: center;
+	position: relative;
+	top: 39px;
+	left: 40px;
+	background-image: url("IMAGES/Health.png");
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+
+.self.manadiv{
+	width: 190px;
+	height: 20px;
+	position: relative;
+	top: -266px;
+	left: 298px;
+}
+
+.hand *{
+	margin: -20px;
+	transition: all .2s ease-in-out;
+}
+
+.hand img:hover{
+	transform: scale(1.1);
+}
+
+#game {
+	display: none;
+}
+
+/*
+FONTS
+*/
+
+@font-face {
+	font-family: 'HealthFont';
+	src: url('FONTS/Health.ttf');
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.avatar {
+	width: 220px;
+	height: 221px;
+}
